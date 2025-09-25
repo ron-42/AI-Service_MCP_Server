@@ -1,0 +1,14 @@
+[project]
+name = "mcp-server"
+version = "0.1.0"
+description = "FastMCP server exposing web search (Tavily), vector KB search (Pinecone + OpenAI embeddings) and external Request ticket creation tools."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+	"fastmcp>=0.2.0",
+	"tavily-python>=0.5.0",
+	"openai>=1.0.0",
+	"pinecone-client>=4.0.0",
+	"python-dotenv>=1.0.0",
+	"requests>=2.31.0"
+]
