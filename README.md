@@ -29,15 +29,15 @@ All tools are registered via FastMCP decorators in `src/main.py`. The same under
 
 ## 📦 Requirements
 
-| Component | Purpose |
-|-----------|---------|
-| Python 3.12+ | Runtime |
-| fastmcp | MCP server framework |
-| tavily-python | Web search SDK |
-| openai | Embedding generation |
-| pinecone-client | Vector DB access |
-| requests | External API integration |
-| python-dotenv | Local `.env` loading |
+| Component       | Purpose                  |
+| --------------- | ------------------------ |
+| Python 3.12+    | Runtime                  |
+| fastmcp         | MCP server framework     |
+| tavily-python   | Web search SDK           |
+| openai          | Embedding generation     |
+| pinecone-client | Vector DB access         |
+| requests        | External API integration |
+| python-dotenv   | Local `.env` loading     |
 
 ## 🔐 Environment Variables
 
@@ -97,6 +97,7 @@ uv cache prune
 ```
 
 Notes:
+
 - Commit the generated `uv.lock` (if you run `uv lock`) for deterministic builds.
 - `uv run` isolates execution without needing to manually activate `.venv`.
 - Use `uv pip sync pyproject.toml` if you want to force exact lock state into an already existing environment.
@@ -106,7 +107,9 @@ You should see startup diagnostics showing which integrations are active.
 ## 🛠 Tools Overview
 
 ### 1. web_search
+
 Inputs:
+
 - `query` (str, required)
 - `max_results` (int, default 5)
 - `search_depth` ("basic" | "advanced")
@@ -116,6 +119,7 @@ Inputs:
 Returns synthesized answer + structured results.
 
 ### 2. kb_search
+
 Performs: OpenAI embedding -> Pinecone similarity query.
 
 Inputs: `query` (str), `top_k` (int), `include_metadata` (bool)
@@ -123,6 +127,7 @@ Inputs: `query` (str), `top_k` (int), `include_metadata` (bool)
 Response includes scored matches and metadata (index name, model).
 
 ### 3. create_request
+
 Validates + POSTs a ticket to the external Request API with detailed status‑aware error mapping.
 
 Minimum required: `subject`, `requester_email`.
@@ -132,16 +137,19 @@ Optional rich fields: category, impact/priority/urgency, support level (`tier1..
 ## 🧪 Testing
 
 Direct (no MCP runtime) functional checks:
+
 ```bash
 python test/test-mcp.py
 ```
 
 This script:
+
 - Verifies env var presence
 - Exercises web, KB, and request creation flows (minimal + full)
 - Prints structured success / error diagnostics
 
 Tavily quick probe (ensure you DO NOT hardcode keys in committed code):
+
 ```bash
 python test/test-tavily.py  # adapt to load key from env before committing
 ```
@@ -151,10 +159,11 @@ python test/test-tavily.py  # adapt to load key from env before committing
 ## 🧪 Example MCP Client Invocation (Conceptual)
 
 If your MCP client supports JSON tool calls, a `web_search` invocation might look like:
+
 ```jsonc
 {
-	"tool": "web_search",
-	"args": { "query": "Latest FastMCP examples", "max_results": 3 }
+  "tool": "web_search",
+  "args": { "query": "Latest FastMCP examples", "max_results": 3 }
 }
 ```
 
@@ -167,6 +176,7 @@ If your MCP client supports JSON tool calls, a `web_search` invocation might loo
 ## 🔍 Observability
 
 Current version logs startup capability matrix to stdout. For production consider:
+
 - Structured logging (json)
 - Request/response latency metrics
 - Retry/backoff wrappers for transient network errors
@@ -174,12 +184,14 @@ Current version logs startup capability matrix to stdout. For production conside
 ## 🧩 Extending
 
 Add a new tool:
+
 ```python
 @mcp.tool()
 def my_new_tool(arg1: str) -> dict:
 		# implement
 		return {"ok": True}
 ```
+
 Restart the server; FastMCP auto‑registers the function.
 
 ## 🔒 Security Notes
@@ -218,5 +230,5 @@ python src/main.py
 You now have an MCP server exposing search, knowledge, and ticketing automation tools. Plug it into your MCP aware client and build higher‑level workflows fast.
 
 ---
-Generated README – adjust branding, roadmap, and license to match your org before publishing.
 
+Generated README – adjust branding, roadmap, and license to match your org before publishing.

@@ -1,0 +1,618 @@
+{
+  "dashboardInfo": {
+    "title": "IT Service Desk - Live Ticket Dashboard",
+    "date": "25-09-2025",
+    "location": "Ahmedabad, Gujarat",
+    "time": "16:44 IST"
+  },
+  "tickets": [
+    {
+      "ticketId": "INC-202509-001",
+      "subject": "ThinkPad T14 not charging",
+      "requester": {
+        "name": "Rohan Patel",
+        "email": "rohan.p@examplecorp.co.in"
+      },
+      "dateReported": "25-09-2025 09:15 AM",
+      "category": "Hardware",
+      "priority": "High",
+      "status": "Resolved",
+      "assignedTo": "Sameer Gupta",
+      "userDescription": "Hi team, my laptop is not charging. The small light next to the charging port isn't on when I plug it in. I have tried the plug point at my desk and in the cafeteria, same problem. Battery is at 12%.",
+      "updateHistory": [
+        "[09:25] - Sameer Gupta: Went to user's desk. Tested his charger on my laptop, it didn't work. Tested my charger on his laptop, it worked fine.",
+        "[09:30] - Sameer Gupta: User's 65W USB-C adapter is faulty. Issued a new one from IT stock (Asset ID: CHG-1092).",
+        "[09:35] - Sameer Gupta: User confirmed laptop is now charging."
+      ],
+      "resolution": "Replaced the user's faulty 65W USB-C adapter with a new unit from IT stock."
+    },
+    {
+      "ticketId": "INC-202509-002",
+      "subject": "My new Dell monitor has a yellow tint",
+      "requester": {
+        "name": "Priya Sharma",
+        "email": "priya.s@examplecorp.co.in"
+      },
+      "dateReported": "25-09-2025 10:02 AM",
+      "category": "Hardware",
+      "priority": "Medium",
+      "status": "In Progress",
+      "assignedTo": "Anjali Verma",
+      "userDescription": "The new Dell U2721DE monitor you installed yesterday looks very yellow compared to my laptop screen. It's hurting my eyes. Is there a setting for this?",
+      "updateHistory": [
+        "[10:10] - Anjali Verma: Called Priya. Guided her to check if 'Night Light' was enabled in Windows display settings. It was off.",
+        "[10:15] - Anjali Verma: Remoted into her machine. Checked the monitor's On-Screen Display (OSD) settings. The color profile was set to 'Warm'. Changed to 'Standard'. User reports it's better but not perfect."
+      ],
+      "nextSteps": "Schedule a desk-side visit to physically inspect the DisplayPort cable and perform a color calibration on the monitor."
+    },
+    {
+      "ticketId": "INC-202509-003",
+      "subject": "Office printer is jammed, I can't get the paper out",
+      "requester": {
+        "name": "Rajesh Kumar",
+        "email": "rajesh.k@examplecorp.co.in"
+      },
+      "dateReported": "25-09-2025 11:30 AM",
+      "category": "Hardware",
+      "priority": "Low",
+      "status": "Resolved",
+      "assignedTo": "Sameer Gupta",
+      "userDescription": "The 3rd floor HP LaserJet (near the HR department) has a paper jam. I tried to pull the paper out but it tore and now a piece is stuck deep inside.",
+      "updateHistory": [
+        "[11:45] - Sameer Gupta: Inspected printer. User had tried to pull paper from the front tray.",
+        "[11:50] - Sameer Gupta: Opened the rear access door and removed the fuser unit to access the paper path.",
+        "[11:55] - Sameer Gupta: Removed the torn paper fragment, reinstalled the fuser, and ran 5 test prints successfully."
+      ],
+      "resolution": "A torn piece of paper was removed from the printer's fuser assembly. The printer is now clear and operational."
+    },
+    {
+      "ticketId": "INC-202509-004",
+      "subject": "Keyboard typing wrong characters",
+      "requester": {
+        "name": "Meera Desai",
+        "email": "meera.d@examplecorp.co.in"
+      },
+      "dateReported": "25-09-2025 12:10 PM",
+      "category": "Hardware",
+      "priority": "Medium",
+      "status": "Resolved",
+      "assignedTo": "Anjali Verma",
+      "userDescription": "My keyboard is acting strange. When I type the @ symbol I get a \" and vice versa. Other keys are also mixed up.",
+      "updateHistory": [
+        "[12:15] - Anjali Verma: Remoted into user's PC. Checked language settings. The keyboard layout was set to 'English (UK)'.",
+        "[12:17] - Anjali Verma: Switched the layout back to 'English (India)' and removed the incorrect layout from the language profile.",
+        "[12:20] - Anjali Verma: User confirmed all keys are now mapping correctly."
+      ],
+      "resolution": "The user's keyboard language layout in Windows was corrected from 'English (UK)' to 'English (India)'."
+    },
+    {
+      "ticketId": "INC-202509-005",
+      "subject": "Request for a new ergonomic mouse",
+      "requester": {
+        "name": "Vikram Singh",
+        "email": "vikram.s@examplecorp.co.in"
+      },
+      "dateReported": "25-09-2025 01:45 PM",
+      "category": "Hardware Request",
+      "priority": "Low",
+      "status": "On Hold (Pending Approval)",
+      "assignedTo": "IT Procurement",
+      "userDescription": "I am getting some pain in my wrist. Can I please request a vertical ergonomic mouse? My manager has already approved it verbally.",
+      "updateHistory": [
+        "[01:50] - IT Procurement: Ticket logged. Emailed user's manager, Mrs. Sunita Joshi, for formal approval as per policy."
+      ],
+      "nextSteps": "Awaiting email approval from the user's manager before proceeding with the order."
+    },
+    {
+      "ticketId": "INC-202509-006",
+      "subject": "Laptop is making a loud clicking noise",
+      "requester": {
+        "name": "Isha Nair",
+        "email": "isha.n@examplecorp.co.in"
+      },
+      "dateReported": "25-09-2025 02:30 PM",
+      "category": "Hardware",
+      "priority": "High",
+      "status": "In Progress",
+      "assignedTo": "Sameer Gupta",
+      "userDescription": "My laptop has started making a very loud clicking sound, especially when it is starting up. I'm worried it will fail. I have saved all my work to OneDrive but want to get it checked.",
+      "updateHistory": [
+        "[02:35] - Sameer Gupta: User brought laptop to IT desk. Confirmed clicking noise is from the HDD.",
+        "[02:45] - Sameer Gupta: Ran hardware diagnostics, which confirmed a \"Hard Drive S.M.A.R.T. failure imminent\" warning."
+      ],
+      "nextSteps": "Clone the failing hard drive to a new 512GB SSD. If cloning fails, perform a fresh Windows installation and assist user with data restoration from OneDrive."
+    },
+    {
+      "ticketId": "INC-202509-007",
+      "subject": "My webcam is not detected",
+      "requester": {
+        "name": "Aarav Mehta",
+        "email": "aarav.m@examplecorp.co.in"
+      },
+      "dateReported": "25-09-2025 03:15 PM",
+      "category": "Hardware",
+      "priority": "Medium",
+      "status": "Resolved",
+      "assignedTo": "Anjali Verma",
+      "userDescription": "I have a Teams meeting and my camera is not working. It says 'No camera found'. It's a Lenovo ThinkPad.",
+      "updateHistory": [
+        "[03:20] - Anjali Verma: Called Aarav. Asked him to check the physical privacy shutter on the webcam.",
+        "[03:22] - Anjali Verma: User confirmed the shutter was closed. After sliding it open, the camera was detected in Teams."
+      ],
+      "resolution": "User was guided to open the physical privacy shutter on the laptop's webcam."
+    },
+    {
+      "ticketId": "INC-202509-008",
+      "subject": "Need a new headset for calls",
+      "requester": {
+        "name": "Pooja Bhatt",
+        "email": "pooja.b@examplecorp.co.in"
+      },
+      "dateReported": "25-09-2025 04:10 PM",
+      "category": "Hardware Request",
+      "priority": "Low",
+      "status": "Open",
+      "assignedTo": "IT Helpdesk",
+      "userDescription": "The microphone on my current headset has stopped working. My team members say I sound very distant. Can I get a replacement?",
+      "updateHistory": [
+        "[04:15] - IT Helpdesk: Ticket logged."
+      ],
+      "nextSteps": "User has been requested to visit the IT Helpdesk to collect a replacement Jabra Evolve 20 headset."
+    },
+    {
+      "ticketId": "INC-202509-009",
+      "subject": "Docking station not detecting my second monitor",
+      "requester": {
+        "name": "Manish Tiwari",
+        "email": "manish.t@examplecorp.co.in"
+      },
+      "dateReported": "25-09-2025 04:30 PM",
+      "category": "Hardware",
+      "priority": "Medium",
+      "status": "In Progress",
+      "assignedTo": "Sameer Gupta",
+      "userDescription": "I have two monitors but only one is working when I plug in my laptop to the dock. I've swapped the cables but the same monitor stays blank.",
+      "updateHistory": [
+        "[04:35] - Sameer Gupta: Initial diagnosis points to a faulty DisplayPort on the docking station."
+      ],
+      "nextSteps": "Visit user's desk tomorrow morning with a spare dock and cable for testing and replacement."
+    },
+    {
+      "ticketId": "INC-202509-010",
+      "subject": "Biometric fingerprint reader not working",
+      "requester": {
+        "name": "Riya Jain",
+        "email": "riya.j@examplecorp.co.in"
+      },
+      "dateReported": "25-09-2025 04:41 PM",
+      "category": "Hardware",
+      "priority": "Low",
+      "status": "Open",
+      "assignedTo": "Anjali Verma",
+      "userDescription": "I am unable to login with my fingerprint since this morning. It says 'Fingerprint not recognized'. I have cleaned the sensor.",
+      "updateHistory": [
+        "[04:41] - Anjali Verma: Ticket logged."
+      ],
+      "nextSteps": "Remote into the user's machine, open Device Manager, and reinstall the biometric device driver. If that fails, will guide the user to re-register their fingerprints in Windows Hello."
+    },
+    {
+      "ticketId": "INC-202509-011",
+      "subject": "Microsoft Excel not responding with large file",
+      "requester": {
+        "name": "Amit Shah",
+        "email": "amit.s@examplecorp.co.in"
+      },
+      "dateReported": "25-09-2025 09:30 AM",
+      "category": "Software",
+      "priority": "High",
+      "status": "In Progress",
+      "assignedTo": "Vikram Joshi",
+      "userDescription": "Urgent help needed. The `Q3_Sales_Analysis.xlsx` file is not opening. Excel just freezes and says 'Not Responding'. I need this for a 11 AM meeting. It was working fine yesterday.",
+      "updateHistory": [
+        "[09:35] - Vikram Joshi: Confirmed the file is 95MB and on a network share.",
+        "[09:40] - Vikram Joshi: Copying file to desktop did not help. 'Open and Repair' utility failed.",
+        "[10:05] - Vikram Joshi: Located a previous version from yesterday on SharePoint."
+      ],
+      "nextSteps": "Waiting for user to confirm if the previous version of the file is acceptable for his meeting. If not, will attempt to open the file on a high-spec machine in IT."
+    },
+    {
+      "ticketId": "INC-202509-012",
+      "subject": "Need to install Power BI Desktop",
+      "requester": {
+        "name": "Kavita Iyer",
+        "email": "kavita.i@examplecorp.co.in"
+      },
+      "dateReported": "25-09-2025 10:15 AM",
+      "category": "Software Request",
+      "priority": "Low",
+      "status": "Resolved",
+      "assignedTo": "Anjali Verma",
+      "userDescription": "Hi, can you please install Power BI on my machine? It's asking for admin password.",
+      "updateHistory": [
+        "[10:20] - Anjali Verma: Called Kavita and informed her that Power BI is available for self-service install via the Company Portal, which does not require admin rights.",
+        "[10:35] - Anjali Verma: User confirmed the installation was successful."
+      ],
+      "resolution": "Guided user to install the application via the self-service Company Portal."
+    },
+    {
+      "ticketId": "INC-202509-013",
+      "subject": "My Outlook is not receiving new mails",
+      "requester": {
+        "name": "Arjun Reddy",
+        "email": "arjun.r@examplecorp.co.in"
+      },
+      "dateReported": "25-09-2025 02:00 PM",
+      "category": "Software",
+      "priority": "High",
+      "status": "Resolved",
+      "assignedTo": "Sameer Gupta",
+      "userDescription": "I haven't got any new email in my Outlook desktop app for more than one hour. It is working on my mobile phone. The bottom of outlook says 'Disconnected'.",
+      "updateHistory": [
+        "[02:15] - Sameer Gupta: Identified that user's local Outlook data file (.OST) was oversized and likely corrupt.",
+        "[02:20] - Sameer Gupta: Renamed the old .OST file and restarted Outlook to force a rebuild of the local cache from the server.",
+        "[02:45] - Sameer Gupta: User confirmed new emails started syncing."
+      ],
+      "resolution": "Recreated the user's Outlook OST file to resolve a corruption issue. Advised user to regularly archive old emails."
+    },
+    {
+      "ticketId": "INC-202509-014",
+      "subject": "Error in our internal CRM 'LeadMax'",
+      "requester": {
+        "name": "Sunita Rao",
+        "email": "sunita.r@examplecorp.co.in"
+      },
+      "dateReported": "25-09-2025 03:30 PM",
+      "category": "Software",
+      "priority": "Medium",
+      "status": "Escalated",
+      "assignedTo": "App Support Team",
+      "userDescription": "When I try to save a new lead in LeadMax, I get an error 'Exception thrown: Null pointer reference at Line 245'. I have taken a screenshot and attached it.",
+      "updateHistory": [
+        "[03:35] - Anjali Verma: Checked the error. This is a code-level application bug."
+      ],
+      "nextSteps": "The ticket has been escalated to the L2 Application Support Team for debugging and resolution. Awaiting their update."
+    },
+    {
+      "ticketId": "INC-202509-015",
+      "subject": "Adobe Acrobat keeps asking me to sign in",
+      "requester": {
+        "name": "Mohan Gupta",
+        "email": "mohan.g@examplecorp.co.in"
+      },
+      "dateReported": "25-09-2025 04:00 PM",
+      "category": "Software",
+      "priority": "Low",
+      "status": "In Progress",
+      "assignedTo": "Vikram Joshi",
+      "userDescription": "Every time I open a PDF, Adobe asks me to sign in to my account. It's very annoying. I sign in, and the next time it asks again.",
+      "updateHistory": [
+        "[04:05] - Vikram Joshi: Identified as a known issue with a corrupt Adobe licensing token."
+      ],
+      "nextSteps": "Schedule a remote session with the user to run the Adobe CC Cleaner tool and reset the local license files."
+    },
+    {
+      "ticketId": "INC-202509-016",
+      "subject": "Outlook search is not working",
+      "requester": {
+        "name": "Divya Singh",
+        "email": "divya.s@examplecorp.co.in"
+      },
+      "dateReported": "25-09-2025 09:45 AM",
+      "category": "Software",
+      "priority": "Medium",
+      "status": "Resolved",
+      "assignedTo": "Anjali Verma",
+      "userDescription": "When I search for any email in Outlook, it says 'No results found', even for emails that I can see in my inbox.",
+      "updateHistory": [
+        "[09:55] - Anjali Verma: Remoted in and checked the Windows Search service, it was running.",
+        "[10:00] - Anjali Verma: Navigated to Outlook's indexing options and initiated a rebuild of the search index.",
+        "[10:45] - Anjali Verma: After the rebuild completed, user confirmed search is now working perfectly."
+      ],
+      "resolution": "Rebuilt the Outlook search index via the application's indexing options."
+    },
+    {
+      "ticketId": "INC-202509-017",
+      "subject": "Request for Microsoft Visio License",
+      "requester": {
+        "name": "Sanjay Desai",
+        "email": "sanjay.d@examplecorp.co.in"
+      },
+      "dateReported": "25-09-2025 11:20 AM",
+      "category": "Software Request",
+      "priority": "Low",
+      "status": "On Hold (Pending Approval)",
+      "assignedTo": "IT Procurement",
+      "userDescription": "My team needs to create process flow diagrams. Can I please get a license for Microsoft Visio?",
+      "updateHistory": [
+        "[11:25] - IT Procurement: Confirmed that Visio is a separately licensed product. Sent request to user's department head for budget approval."
+      ],
+      "nextSteps": "Awaiting manager approval before purchasing and assigning the license."
+    },
+    {
+      "ticketId": "INC-202509-018",
+      "subject": "MS Teams crashes on startup",
+      "requester": {
+        "name": "Fatima Khan",
+        "email": "fatima.k@examplecorp.co.in"
+      },
+      "dateReported": "25-09-2025 01:50 PM",
+      "category": "Software",
+      "priority": "High",
+      "status": "Resolved",
+      "assignedTo": "Sameer Gupta",
+      "userDescription": "Teams is not opening. I see the splash screen and then it just closes. I have tried restarting my laptop. I have urgent meetings.",
+      "updateHistory": [
+        "[01:55] - Sameer Gupta: Remoted into the user's machine.",
+        "[02:00] - Sameer Gupta: Navigated to `%appdata%\\Microsoft\\Teams` and cleared the application cache.",
+        "[02:05] - Sameer Gupta: Restarted MS Teams. The application launched successfully and the user was able to log in."
+      ],
+      "resolution": "Cleared the MS Teams application cache to resolve the startup issue."
+    },
+    {
+      "ticketId": "INC-202509-019",
+      "subject": "Font \"Teko\" not rendering in Photoshop",
+      "requester": {
+        "name": "Alok Nath",
+        "email": "alok.n@examplecorp.co.in"
+      },
+      "dateReported": "25-09-2025 03:25 PM",
+      "category": "Software",
+      "priority": "Medium",
+      "status": "In Progress",
+      "assignedTo": "Vikram Joshi",
+      "userDescription": "I installed the Teko font for a design project, but it is not showing up in the font list in Adobe Photoshop. It shows up in MS Word.",
+      "updateHistory": [
+        "[03:30] - Vikram Joshi: Remoted in. The user had installed the font by double-clicking, which sometimes only registers it for the user profile, not for all applications."
+      ],
+      "nextSteps": "Reinstall the font by right-clicking and selecting \"Install for all users\" to ensure it is properly registered in the system font directory that Adobe applications use."
+    },
+    {
+      "ticketId": "INC-202509-020",
+      "subject": "\"Cannot verify security certificate\" error in Chrome",
+      "requester": {
+        "name": "Nisha Agarwal",
+        "email": "nisha.a@examplecorp.co.in"
+      },
+      "dateReported": "25-09-2025 04:20 PM",
+      "category": "Software",
+      "priority": "Medium",
+      "status": "Resolved",
+      "assignedTo": "Anjali Verma",
+      "userDescription": "I am getting a security certificate error on many internal websites. It was working fine this morning.",
+      "updateHistory": [
+        "[04:25] - Anjali Verma: Remoted in and checked the date and time on the user's laptop. It was set to the year 2023.",
+        "[04:27] - Anjali Verma: Corrected the system date and time and re-synced with the internet time server.",
+        "[04:30] - Anjali Verma: Asked user to relaunch Chrome. The websites now load without certificate errors."
+      ],
+      "resolution": "Corrected the system's date and time, which was causing the SSL certificate validation to fail."
+    },
+    {
+      "ticketId": "INC-202509-021",
+      "subject": "VPN is not connecting from home",
+      "requester": {
+        "name": "Sneha Verma",
+        "email": "sneha.v@examplecorp.co.in"
+      },
+      "dateReported": "25-09-2025 09:10 AM",
+      "category": "Network",
+      "priority": "High",
+      "status": "Resolved",
+      "assignedTo": "Vikram Joshi",
+      "userDescription": "I am working from home today but my FortiClient VPN is stuck at 98% and then gives a connection error. My internet is working fine, I can browse websites.",
+      "updateHistory": [
+        "[09:20] - Vikram Joshi: Called user and advised her to perform a full restart of her home Wi-Fi router.",
+        "[09:30] - Vikram Joshi: After the router rebooted, the user was able to connect to the VPN successfully."
+      ],
+      "resolution": "Guided user to restart their home internet router to resolve a stale connection issue preventing the VPN from authenticating."
+    },
+    {
+      "ticketId": "INC-202509-022",
+      "subject": "Very slow internet today in the office",
+      "requester": {
+        "name": "Deepak Chopra",
+        "email": "deepak.c@examplecorp.co.in"
+      },
+      "dateReported": "25-09-2025 11:00 AM",
+      "category": "Network",
+      "priority": "Medium",
+      "status": "In Progress",
+      "assignedTo": "Network Team",
+      "userDescription": "The entire office internet seems very slow. Websites are taking a long time to load and network drive is lagging. My whole team on the 4th floor is facing this.",
+      "updateHistory": [
+        "[11:05] - Sameer Gupta: Received multiple similar complaints. Confirmed this is a site-wide issue."
+      ],
+      "nextSteps": "Ticket escalated to the Network Infrastructure team to investigate internet link saturation and firewall load."
+    },
+    {
+      "ticketId": "INC-202509-023",
+      "subject": "Cannot access Finance shared drive",
+      "requester": {
+        "name": "Ananya Reddy",
+        "email": "ananya.r@examplecorp.co.in"
+      },
+      "dateReported": "25-09-2025 12:30 PM",
+      "category": "Network",
+      "priority": "High",
+      "status": "Resolved",
+      "assignedTo": "Sameer Gupta",
+      "userDescription": "I am getting 'Access Denied' when trying to open the `\\\\fileserver01\\Finance` drive. I need to access the monthly reports. I had access yesterday.",
+      "updateHistory": [
+        "[12:35] - Sameer Gupta: Checked Active Directory and found the user was missing from the `SEC-GRP-Finance-Users` security group.",
+        "[12:45] - Sameer Gupta: After getting manager approval, added user to the security group.",
+        "[13:00] - Sameer Gupta: User logged out and back in, and confirmed access is now granted."
+      ],
+      "resolution": "Added the user to the correct Active Directory security group to grant them permission to the Finance shared drive."
+    },
+    {
+      "ticketId": "INC-202509-024",
+      "subject": "Wi-Fi is disconnecting frequently",
+      "requester": {
+        "name": "Vijay Varma",
+        "email": "vijay.v@examplecorp.co.in"
+      },
+      "dateReported": "25-09-2025 02:20 PM",
+      "category": "Network",
+      "priority": "Medium",
+      "status": "In Progress",
+      "assignedTo": "Sameer Gupta",
+      "userDescription": "My laptop keeps disconnecting from the office Wi-Fi every 10-15 minutes. I have to manually reconnect each time.",
+      "updateHistory": [
+        "[02:25] - Sameer Gupta: Visited user's desk. His seating location is at the edge of the floor, a known weak signal area.",
+        "[02:30] - Sameer Gupta: Reinstalled the Wi-Fi driver and updated power management settings to prevent the adapter from sleeping. Issue persists."
+      ],
+      "nextSteps": "Report the weak signal area to the Network Team for a possible access point adjustment. As a temporary fix, provide the user with a USB Wi-Fi adapter with better reception."
+    },
+    {
+      "ticketId": "INC-202509-025",
+      "subject": "Cannot connect to server via RDP",
+      "requester": {
+        "name": "Murali Krishnan",
+        "email": "murali.k@examplecorp.co.in"
+      },
+      "dateReported": "25-09-2025 04:30 PM",
+      "category": "Network",
+      "priority": "High",
+      "status": "In Progress",
+      "assignedTo": "Vikram Joshi",
+      "userDescription": "I am unable to RDP into the server `SRV-APP-07`. I am getting a generic network error. I need to deploy a critical update.",
+      "updateHistory": [
+        "[04:35] - Vikram Joshi: I am also unable to RDP into the server, but I can ping it successfully.",
+        "[04:40] - Vikram Joshi: This indicates the server is online, but the Remote Desktop service might be hung or the firewall is blocking the port."
+      ],
+      "nextSteps": "Escalating to the Server Admin team to check the services and firewall rules on `SRV-APP-07`."
+    },
+    {
+      "ticketId": "INC-202509-031",
+      "subject": "Password Reset for SAP Account",
+      "requester": {
+        "name": "Suresh Menon",
+        "email": "suresh.m@examplecorp.co.in"
+      },
+      "dateReported": "25-09-2025 10:45 AM",
+      "category": "Account Management",
+      "priority": "High",
+      "status": "Resolved",
+      "assignedTo": "Vikram Joshi",
+      "userDescription": "I have forgotten my SAP password and my account is now locked. I need it reset urgently to process invoices.",
+      "updateHistory": [
+        "[10:50] - Vikram Joshi: Verified user's identity via phone call.",
+        "[10:52] - Vikram Joshi: Unlocked the account in SAP and issued a temporary password.",
+        "[11:05] - Vikram Joshi: User confirmed they were able to log in with the temporary password and set a new one."
+      ],
+      "resolution": "Unlocked the user's SAP account and provided a one-time temporary password."
+    },
+    {
+      "ticketId": "INC-202509-032",
+      "subject": "New Employee Account Creation - Aarav Sharma",
+      "requester": {
+        "name": "Priya Singh (HR Manager)",
+        "email": "priya.s@examplecorp.co.in"
+      },
+      "dateReported": "25-09-2025 01:15 PM",
+      "category": "Account Management",
+      "priority": "Medium",
+      "status": "Open",
+      "assignedTo": "IT Helpdesk",
+      "userDescription": "Please create an account for our new hire, Aarav Sharma, starting next Monday. He is joining the Sales team. Please create his email, AD account, and provide standard Sales application access.",
+      "updateHistory": [
+        "[01:20] - Anjali Verma: Ticket logged."
+      ],
+      "nextSteps": "Proceed with the standard new hire account creation process as per the checklist."
+    },
+    {
+      "ticketId": "INC-202509-033",
+      "subject": "Request access to shared mailbox \"sales.queries\"",
+      "requester": {
+        "name": "Geeta Patil",
+        "email": "geeta.p@examplecorp.co.in"
+      },
+      "dateReported": "25-09-2025 03:00 PM",
+      "category": "Access Request",
+      "priority": "Low",
+      "status": "Resolved",
+      "assignedTo": "Vikram Joshi",
+      "userDescription": "Please provide me with full access to the sales.queries@examplecorp.co.in shared mailbox. My manager has approved this.",
+      "updateHistory": [
+        "[03:05] - Vikram Joshi: Received email approval from the mailbox owner.",
+        "[03:10] - Vikram Joshi: Added user to the mailbox delegation list in Exchange Admin Center.",
+        "[03:15] - Vikram Joshi: User restarted Outlook and confirmed the mailbox is now visible."
+      ],
+      "resolution": "Granted the user \"Full Access\" and \"Send As\" permissions to the requested shared mailbox."
+    },
+    {
+      "ticketId": "INC-202509-034",
+      "subject": "Deactivate accounts for leaver - Rahul Verma",
+      "requester": {
+        "name": "HR Department",
+        "email": "hr@examplecorp.co.in"
+      },
+      "dateReported": "25-09-2025 04:38 PM",
+      "category": "Account Management",
+      "priority": "High",
+      "status": "Open",
+      "assignedTo": "IT Helpdesk",
+      "userDescription": "As per the exit process, please disable all system access for Rahul Verma, effective end of business today (25-09-2025).",
+      "updateHistory": [
+        "[04:40] - IT Helpdesk: Ticket logged."
+      ],
+      "nextSteps": "The leaver process will be executed at 18:00 IST today. This includes disabling the AD account, converting the mailbox to shared, and revoking all application access."
+    },
+    {
+      "ticketId": "INC-202509-035",
+      "subject": "Need MFA reset - new phone",
+      "requester": {
+        "name": "Preeti Desai",
+        "email": "preeti.d@examplecorp.co.in"
+      },
+      "dateReported": "25-09-2025 09:05 AM",
+      "category": "Account Management",
+      "priority": "High",
+      "status": "Resolved",
+      "assignedTo": "Anjali Verma",
+      "userDescription": "I got a new mobile phone and I am unable to login to my account as the authenticator app was on my old phone. Please help.",
+      "updateHistory": [
+        "[09:10] - Anjali Verma: Called user on her desk phone to verify identity.",
+        "[09:15] - Anjali Verma: In the Azure AD portal, revoked her existing MFA sessions and selected \"Require Re-register MFA\".",
+        "[09:20] - Anjali Verma: Guided the user to log in again and follow the prompts to set up Microsoft Authenticator on her new phone."
+      ],
+      "resolution": "Reset the user's MFA registration, allowing them to configure the authenticator app on their new device."
+    },
+    {
+      "ticketId": "INC-202509-041",
+      "subject": "Conference Room Projector not working (CR-Sagarmatha)",
+      "requester": {
+        "name": "Nikita Joshi",
+        "email": "nikita.j@examplecorp.co.in"
+      },
+      "dateReported": "25-09-2025 02:45 PM",
+      "category": "Meeting Room Support",
+      "priority": "High",
+      "status": "Resolved",
+      "assignedTo": "Sameer Gupta",
+      "userDescription": "Hi, we have a client meeting in the Sagarmatha room and the projector is showing 'No Signal'. We have connected the HDMI cable properly.",
+      "updateHistory": [
+        "[02:50] - Sameer Gupta: Went to the conference room. Found the input source on the control panel was set to 'VGA'.",
+        "[02:52] - Sameer Gupta: Switched the input source to 'HDMI'. The laptop display appeared on the screen."
+      ],
+      "resolution": "Selected the correct input source (HDMI) on the meeting room's control panel."
+    },
+    {
+      "ticketId": "INC-202509-042",
+      "subject": "How do I add my office email to my Android phone?",
+      "requester": {
+        "name": "Karan Malhotra",
+        "email": "karan.m@examplecorp.co.in"
+      },
+      "dateReported": "25-09-2025 04:15 PM",
+      "category": "How-To Question",
+      "priority": "Low",
+      "status": "Resolved",
+      "assignedTo": "Anjali Verma",
+      "userDescription": "I have a new Samsung phone. Can you please guide me on how to configure my official email on it?",
+      "updateHistory": [
+        "[04:20] - Anjali Verma: Sent the user the knowledge base article `KB001024 - \"Configuring Office 365 Email on Android using the Outlook App\"`.",
+        "[04:35] - Anjali Verma: User replied to the ticket confirming he was able to set it up successfully using the guide."
+      ]
+    }
+  ]
+}
